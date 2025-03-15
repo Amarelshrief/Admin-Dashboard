@@ -12,65 +12,86 @@ import {
   ChartNoAxesColumn,
   ChartPie,
   ChartLine,
+  BookOpenText,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
 import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
 
 // This is sample data.
 const data = {
+  user: {
+    name: "shadcn",
+    email: "m@example.com",
+    avatar: "/avatars/shadcn.jpg",
+  },
   navMain: [
     {
       title: "Home",
-      url: "/home",
+      url: "/",
       icon: House,
       isActive: true,
     },
     {
       title: "Manage Team",
-      url: "#",
+      url: "/manage-team",
       icon: UsersRound,
+      isActive: false,
     },
     {
       title: "Contacts Information",
-      url: "#",
+      url: "/contacts-info",
       icon: BookUser,
+      isActive: false,
     },
     {
       title: "Invoices Balance",
-      url: "#",
+      url: "/invoices-balance",
       icon: Rows4,
+      isActive: false,
     },
     {
       title: "Profile Form",
-      url: "#",
+      url: "/profile-form",
       icon: User,
+      isActive: false,
     },
     {
       title: "Calender",
-      url: "/Play-ground",
+      url: "/calender",
       icon: Calendar,
-      isActive: true,
+      isActive: false,
     },
     {
       title: "FAQ Page",
-      url: "#",
+      url: "/faq-help",
       icon: BadgeHelp,
+      isActive: false,
     },
     {
       title: "Bar Chart",
-      url: "#",
+      url: "/bar-chart",
       icon: ChartNoAxesColumn,
+      isActive: false,
     },
     {
       title: "Pie Chart",
-      url: "#",
+      url: "/pie-chart",
       icon: ChartPie,
+      isActive: false,
     },
     {
       title: "Line Chart",
-      url: "#",
+      url: "/line-chart",
       icon: ChartLine,
+      isActive: false,
+    },
+    {
+      title: "Geography Chart",
+      url: "/geography-chart",
+      icon: BookOpenText,
+      isActive: false,
     },
   ],
 };
@@ -81,6 +102,7 @@ export default function SidebarPage({
   return (
     <Sidebar collapsible="icon" {...props}>
       {/* <SidebarHeader> */}
+      <NavUser user={data.user} />
       <SidebarContent className="bg-black">
         <NavMain items={data.navMain} />
         {/* <NavProjects projects={data.projects} /> */}
