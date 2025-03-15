@@ -1,12 +1,13 @@
-import SidebarPage from "./Sidebar";
 import { Separator } from "@/components/ui/separator";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import Header from "../Header/Header";
+import { Outlet } from "react-router-dom";
+import SidebarPage from "@/components/custom/Sidebar/Sidebar";
+import Header from "@/components/custom/Header/Header";
 
-export default function Dashboard() {
+export default function DashboardRootLayout() {
   return (
-    <section className=" h-[4rem] w-full mx-auto pt-2 shadow-xl">
-      <div className="flex justify-between items-start">
+    <section className=" ">
+      <div className="flex justify-between items-start h-[4rem] w-full mx-auto pt-2 shadow-xl">
         <div className=" h-[3rem]">
           <SidebarProvider>
             <div className="flex items-start">
@@ -16,10 +17,12 @@ export default function Dashboard() {
             <Separator orientation="vertical" className="mr-2 h-4" />
           </SidebarProvider>
         </div>
-        <div className="w-full">
+        <div className="w-full flex flex-col">
           <Header />
+          <main className="w-full mt-6">
+            <Outlet />
+          </main>
         </div>
-        {/* <div>afasfafasf</div> */}
       </div>
     </section>
   );
