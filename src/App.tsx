@@ -8,7 +8,6 @@ import BarChartPage from "./pages/BarChart";
 import FAQHelpPage from "./pages/FAQHelp";
 import CalenderPage from "./pages/Calender";
 import ProfileFormPage from "./pages/ProfileForm";
-import InvoicesBalancePage from "./pages/InvoicesBalance";
 import DashboardRootLayout from "./pages/DashboardRoot";
 import GeographyChartPage from "./pages/GeographyChart";
 
@@ -20,7 +19,6 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/manage-team", element: <ManageTeamPage /> },
       { path: "/contacts-info", element: <ContactsInfoPage /> },
-      { path: "/invoices-balance", element: <InvoicesBalancePage /> },
       { path: "/profile-form", element: <ProfileFormPage /> },
       { path: "/calender", element: <CalenderPage /> },
       { path: "/faq-help", element: <FAQHelpPage /> },
