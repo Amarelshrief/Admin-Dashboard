@@ -4,7 +4,6 @@ import * as React from "react";
 import {
   BookUser,
   UsersRound,
-  Rows4,
   House,
   User,
   Calendar,
@@ -43,12 +42,6 @@ const data = {
       title: "Contacts Information",
       url: "/contacts-info",
       icon: BookUser,
-      isActive: false,
-    },
-    {
-      title: "Invoices Balance",
-      url: "/invoices-balance",
-      icon: Rows4,
       isActive: false,
     },
     {
@@ -100,16 +93,18 @@ export default function SidebarPage({
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="icon" {...props}>
-      {/* <SidebarHeader> */}
-      <NavUser user={data.user} />
-      <SidebarContent className="bg-black">
-        <NavMain items={data.navMain} />
-        {/* <NavProjects projects={data.projects} /> */}
-      </SidebarContent>
-      {/* </SidebarHeader> */}
+    <>
+      <Sidebar collapsible="icon" {...props}>
+        {/* <SidebarHeader> */}
+        <NavUser user={data.user} />
+        <SidebarContent className="bg-black">
+          <NavMain items={data.navMain} />
+          {/* <NavProjects projects={data.projects} /> */}
+        </SidebarContent>
+        {/* </SidebarHeader> */}
 
-      <SidebarRail />
-    </Sidebar>
+        <SidebarRail />
+      </Sidebar>
+    </>
   );
 }
