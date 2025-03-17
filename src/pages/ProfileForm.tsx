@@ -1,5 +1,11 @@
+import UserForm from "@/components/custom/UserForm/UserForm";
+
 function ProfileFormPage() {
-  return <div>ProfileFormPage</div>;
+  return (
+    <div>
+      <UserForm />
+    </div>
+  );
 }
 
 export default ProfileFormPage;
