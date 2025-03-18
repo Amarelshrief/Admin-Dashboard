@@ -16,7 +16,12 @@ import {
 
 import { NavMain } from "@/components/nav-main";
 import { NavUser } from "@/components/nav-user";
-import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  // SidebarGroupLabel,
+  SidebarRail,
+} from "@/components/ui/sidebar";
 
 // This is sample data.
 const data = {
@@ -98,6 +103,9 @@ export default function SidebarPage({
         {/* <SidebarHeader> */}
         <NavUser user={data.user} />
         <SidebarContent className="bg-black">
+          {/* <SidebarGroupLabel className="text-gray-400 h-8 bg-red-500">
+            Application
+          </SidebarGroupLabel> */}
           <NavMain items={data.navMain} />
           {/* <NavProjects projects={data.projects} /> */}
         </SidebarContent>
