@@ -6,7 +6,7 @@ import Header from "@/components/custom/Header/Header";
 
 export default function DashboardRootLayout() {
   return (
-    <section className="h-screen overflow-hidden">
+    <section className="">
       <div className="flex justify-between items-start h-[4rem] w-full pt-2 shadow-xl">
         <div>
           <SidebarProvider>
