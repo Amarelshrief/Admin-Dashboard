@@ -104,7 +104,7 @@ function ContactsData() {
   return (
     <main className="h-screen">
       <div>
-        <h1 className="text-3xl">Contacts</h1>
+        <h1 className="text-3xl font-bold">Contacts</h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>List of Contacts for Future Reference</p>
