@@ -29,10 +29,10 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-1: oklch(0% 0 15.88);
+  --chart-2: oklch(57.12% 0.2317 25.42);
+  --chart-3: oklch(54.12% 0.2467 257.29);
+  --chart-4: oklch(67.06% 0.1603 221.29);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
