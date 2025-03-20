@@ -1,5 +1,11 @@
+import BarChartCompo from "@/components/custom/BarChart/BarChartCompo";
+
 function BarChartPage() {
-  return <div>BarChartPage</div>;
+  return (
+    <div>
+      <BarChartCompo />
+    </div>
+  );
 }
 
 export default BarChartPage;
