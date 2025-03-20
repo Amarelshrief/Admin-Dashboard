@@ -46,7 +46,7 @@ export default function PieChartCompo() {
   return (
     <section>
       <div>
-        <h1 className="text-3xl">Line Chart</h1>
+        <h1 className="text-3xl font-bold">Line Chart</h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>The minimum wage in Germany,Frane and Spain (EUR/month)</p>
