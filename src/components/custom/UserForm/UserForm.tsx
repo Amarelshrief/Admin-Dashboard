@@ -86,7 +86,7 @@ function UserForm() {
   return (
     <section>
       <div>
-        <h1 className="text-3xl">Create User </h1>
+        <h1 className="text-3xl font-bold">Create User </h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>Create a New User Profile</p>
