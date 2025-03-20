@@ -1,5 +1,11 @@
+import LineChartCompo from "@/components/custom/LineChart/LineChartCompo";
+
 function LineChartPage() {
-  return <div>LineChartPage</div>;
+  return (
+    <div>
+      <LineChartCompo />
+    </div>
+  );
 }
 
 export default LineChartPage;
