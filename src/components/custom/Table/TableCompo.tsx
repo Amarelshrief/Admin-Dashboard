@@ -88,7 +88,7 @@ function TableCompo() {
   return (
     <main>
       <div>
-        <h1 className="text-3xl">Teams</h1>
+        <h1 className="text-3xl font-bold">Teams</h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>Managing The Team Members</p>
