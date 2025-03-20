@@ -1,4 +1,4 @@
-import { PieChartCompo } from "@/components/custom/PieChart/PieChartCompo";
+import PieChartCompo from "@/components/custom/PieChart/PieChartCompo";
 
 function PieChartPage() {
   return (
