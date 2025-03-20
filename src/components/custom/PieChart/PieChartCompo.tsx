@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import { TrendingUp } from "lucide-react";
 import { Label, Pie, PieChart } from "recharts";
@@ -60,7 +58,7 @@ export default function PieChartCompo() {
   return (
     <section>
       <div>
-        <h1 className="text-3xl">Pie Chart</h1>
+        <h1 className="text-3xl font-bold">Pie Chart</h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>Simple Pie Chart</p>
