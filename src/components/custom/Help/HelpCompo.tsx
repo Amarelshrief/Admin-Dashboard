@@ -9,7 +9,7 @@ function HelpCompo() {
   return (
     <main className="">
       <div>
-        <h1 className="text-3xl">FAQ Help</h1>
+        <h1 className="text-3xl font-bold">FAQ Help</h1>
       </div>
       <div className="mt-4 text-gray-500">
         <p>Frequently Asked Questions Page</p>
