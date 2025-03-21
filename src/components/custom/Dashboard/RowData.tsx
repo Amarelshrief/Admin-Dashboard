@@ -24,14 +24,14 @@ function RowData({ data, config }: { data: Data[]; config: ChartConfig }) {
     <section>
       <div className="flex justify-between items-center mt-4 bg-gray-200 hover:bg-gray-300 duration-150 w-[22rem] h-[11rem]">
         <div className="flex flex-col p-4 gap-y-2">
-          <Mail />
+          <Mail className="text-[var(--chart-5)]" />
           <p>12.361</p>
           <p>Emails Sent.</p>
         </div>
         <div className="w-[15rem] h-full">
           {/* <Card className="flex flex-col h-[12rem] bg-blue-400"> */}
           <CardContent className="h-[11rem]">
-            <ChartContainer config={config} className=" h-[10rem] w-full">
+            <ChartContainer config={config} className="h-[10rem] w-full i">
               <PieChart>
                 <ChartTooltip
                   cursor={false}
