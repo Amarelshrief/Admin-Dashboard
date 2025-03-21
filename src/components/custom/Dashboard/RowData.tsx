@@ -22,7 +22,7 @@ function RowData({ data, config }: { data: Data[]; config: ChartConfig }) {
   }, [data]);
   return (
     <section>
-      <div className="flex justify-between items-center mt-4 bg-gray-200 hover:bg-gray-300 w-[22rem] h-[11rem]">
+      <div className="flex justify-between items-center mt-4 bg-gray-200 hover:bg-gray-300 duration-150 w-[22rem] h-[11rem]">
         <div className="flex flex-col p-4 gap-y-2">
           <Mail />
           <p>12.361</p>
