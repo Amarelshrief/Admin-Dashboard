@@ -16,7 +16,13 @@ import {
 
 import { NavMain } from "@/components/nav-main";
 import { NavUser } from "@/components/nav-user";
-import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarRail,
+} from "@/components/ui/sidebar";
 
 // This is sample data.
 const data = {
@@ -25,7 +31,7 @@ const data = {
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
-  navMain: [
+  about_user: [
     {
       title: "Home",
       url: "/",
@@ -44,6 +50,8 @@ const data = {
       icon: BookUser,
       isActive: false,
     },
+  ],
+  services: [
     {
       title: "Profile Form",
       url: "/profile-form",
@@ -62,6 +70,8 @@ const data = {
       icon: BadgeHelp,
       isActive: false,
     },
+  ],
+  chart: [
     {
       title: "Bar Chart",
       url: "/bar-chart",
@@ -98,7 +108,27 @@ export default function SidebarPage({
         {/* <SidebarHeader> */}
         <NavUser user={data.user} />
         <SidebarContent className="bg-black">
-          <NavMain items={data.navMain} />
+          <SidebarGroup className="text-white">
+            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
+              About Users
+            </SidebarGroupLabel>
+            <NavMain items={data.about_user} />
+          </SidebarGroup>
+          <span className="border-[.5px]"></span>
+          <SidebarGroup>
+            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
+              Services
+            </SidebarGroupLabel>
+            <NavMain items={data.services} />
+          </SidebarGroup>
+          <span className="border-[.5px]"></span>
+
+          <SidebarGroup>
+            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
+              Charts
+            </SidebarGroupLabel>
+            <NavMain items={data.chart} />
+          </SidebarGroup>
           {/* <NavProjects projects={data.projects} /> */}
         </SidebarContent>
         {/* </SidebarHeader> */}
