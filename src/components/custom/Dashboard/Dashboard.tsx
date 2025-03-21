@@ -19,7 +19,7 @@ function Dashboard() {
       <div className="mt-4 text-gray-500">
         <p>Welcome to your dashboard</p>
       </div>
-      <div className="flex gap-11">
+      <div className="flex gap-11 flex-wrap">
         <RowData data={data_1} config={config_1} />
         <RowData data={data_2} config={config_2} />
         <RowData data={data_3} config={config_3} />

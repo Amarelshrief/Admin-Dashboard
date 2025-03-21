@@ -30,11 +30,8 @@ function RowData({ data, config }: { data: Data[]; config: ChartConfig }) {
         </div>
         <div className="w-[15rem] h-full">
           {/* <Card className="flex flex-col h-[12rem] bg-blue-400"> */}
-          <CardContent className="h-[11rem] overflow-y-hidden">
-            <ChartContainer
-              config={config}
-              className=" h-[10rem] w-full overflow-y-hidden"
-            >
+          <CardContent className="h-[11rem]">
+            <ChartContainer config={config} className=" h-[10rem] w-full">
               <PieChart>
                 <ChartTooltip
                   cursor={false}
