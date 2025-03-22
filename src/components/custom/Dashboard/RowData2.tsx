@@ -13,7 +13,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { Transactions } from "./ReferencesData";
+import { Transactions } from "./transactions";
 
 const chartData = [
   { year: "2019", spain: 900, germany: 1400, france: 1700 },
