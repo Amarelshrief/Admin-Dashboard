@@ -13,6 +13,9 @@ export const data_3 = [
 export const data_4 = [
   { browser: "edge", visitors: 173, fill: "var(--chart-4)" },
 ];
+export const data_5 = [
+  { browser: "edge", visitors: 173, fill: "var(--chart-7)" },
+];
 
 export const config_1 = {
   browser: {
@@ -48,6 +51,15 @@ export const config_4 = {
   browser: {
     label: "Browser",
     color: "hsl(var(--chart-4))",
+  },
+  visitors: {
+    label: "Visitors",
+  },
+};
+export const config_5 = {
+  browser: {
+    label: "Browser",
+    color: "hsl(var(--chart-7))",
   },
   visitors: {
     label: "Visitors",
