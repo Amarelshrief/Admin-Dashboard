@@ -9,7 +9,6 @@ import FAQHelpPage from "./pages/FAQHelp";
 import CalenderPage from "./pages/Calender";
 import ProfileFormPage from "./pages/ProfileForm";
 import DashboardRootLayout from "./pages/DashboardRoot";
-import GeographyChartPage from "./pages/GeographyChart";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +24,6 @@ const router = createBrowserRouter([
       { path: "/bar-chart", element: <BarChartPage /> },
       { path: "/pie-chart", element: <PieChartPage /> },
       { path: "/line-chart", element: <LineChartPage /> },
-      { path: "/geography-chart", element: <GeographyChartPage /> },
     ],
   },
 ]);
