@@ -9,6 +9,8 @@ import {
   data_4,
 } from "./PieData";
 import RowData from "./RowData";
+import RowData2 from "./RowData2";
+import RowData3 from "./RowData3";
 
 function Dashboard() {
   return (
@@ -24,6 +26,12 @@ function Dashboard() {
         <RowData data={data_2} config={config_2} />
         <RowData data={data_3} config={config_3} />
         <RowData data={data_4} config={config_4} />
+      </div>
+      <div className="flex gap-11 flex-wrap">
+        <RowData2 />
+      </div>
+      <div className="flex gap-11 flex-wrap">
+        <RowData3 />
       </div>
     </section>
   );
