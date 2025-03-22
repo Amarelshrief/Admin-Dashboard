@@ -11,7 +11,6 @@ import {
   ChartNoAxesColumn,
   ChartPie,
   ChartLine,
-  BookOpenText,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -90,12 +89,6 @@ const data = {
       icon: ChartLine,
       isActive: false,
     },
-    {
-      title: "Geography Chart",
-      url: "/geography-chart",
-      icon: BookOpenText,
-      isActive: false,
-    },
   ],
 };
 
@@ -114,14 +107,14 @@ export default function SidebarPage({
             </SidebarGroupLabel>
             <NavMain items={data.about_user} />
           </SidebarGroup>
-          <span className="border-[.5px]"></span>
+          <span className="border-[.5px] border-gray-600"></span>
           <SidebarGroup>
             <SidebarGroupLabel className="text-white font-bold bg-gray-600">
               Services
             </SidebarGroupLabel>
             <NavMain items={data.services} />
           </SidebarGroup>
-          <span className="border-[.5px]"></span>
+          <span className="border-[.5px] border-gray-600"></span>
 
           <SidebarGroup>
             <SidebarGroupLabel className="text-white font-bold bg-gray-600">
