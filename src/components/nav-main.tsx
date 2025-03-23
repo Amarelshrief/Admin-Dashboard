@@ -45,7 +45,7 @@ export function NavMain({
               {/* <CollapsibleTrigger asChild> */}
               <Link to={item.url}>
                 <SidebarMenuButton
-                  className="cursor-pointer text-white"
+                  className="cursor-pointer hover:bg-[var(--ring)]"
                   tooltip={item.title}
                 >
                   {item.icon && <item.icon />}
