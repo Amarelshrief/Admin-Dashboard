@@ -110,7 +110,7 @@ function ContactsData() {
         <p>List of Contacts for Future Reference</p>
       </div>
       <div className="mt-4">
-        <Table className="border-2 border-gray-200 rounded-lg">
+        <Table className="border-2 border-[var(--border)] rounded-lg">
           <TableHeader>
             <TableRow>
               <TableHead className="text-center">ID</TableHead>
