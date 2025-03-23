@@ -18,7 +18,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -33,7 +33,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -49,7 +49,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -65,7 +65,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -80,7 +80,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -95,7 +95,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -110,7 +110,7 @@ function HelpCompo() {
         <div className="text-2xl mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
@@ -123,7 +123,7 @@ function HelpCompo() {
         <div className="text-2xl mb-64">
           <Accordion type="single" collapsible>
             <AccordionItem
-              className="bg-[#eceff1] hover:bg-gray-200 duration-200 rounded-sm text-gray-700"
+              className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
               value="item-1"
             >
               <AccordionTrigger className="cursor-pointer text-2xl p-4">
