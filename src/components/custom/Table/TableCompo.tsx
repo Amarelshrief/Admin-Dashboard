@@ -94,7 +94,7 @@ function TableCompo() {
         <p>Managing The Team Members</p>
       </div>
       <div className="mt-4">
-        <Table className="border-2 border-gray-200 rounded-lg">
+        <Table className="border-2 border-[var(--border)] rounded-lg">
           <TableCaption>A Data List of your Teams.</TableCaption>
           <TableHeader>
             <TableRow>
