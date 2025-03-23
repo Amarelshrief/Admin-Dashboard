@@ -108,7 +108,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="text"
-                            className="p-6 h-full rounded-none focus:border-none w-full amm@shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none w-full amm@shadow-xl border-2 border-[var(--ring)]"
                             placeholder="First Name"
                             {...field}
                           />
@@ -127,7 +127,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="text"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Last Name"
                             {...field}
                           />
@@ -148,7 +148,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="email"
-                            className="p-6 h-full rounded-none focus:border-none w-full shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none w-full shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Email"
                             {...field}
                           />
@@ -167,7 +167,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="password"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Password"
                             {...field}
                           />
@@ -188,7 +188,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="text"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Address 1"
                             {...field}
                           />
@@ -207,7 +207,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="text"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Address 2"
                             {...field}
                           />
@@ -228,7 +228,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="number"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Age"
                             {...field}
                           />
@@ -247,7 +247,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="number"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="Contact Number"
                             {...field}
                           />
@@ -268,7 +268,7 @@ function UserForm() {
                         <FormControl>
                           <Input
                             type="text"
-                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-gray-300"
+                            className="p-6 h-full rounded-none focus:border-none shadow-xl border-2 border-[var(--ring)]"
                             placeholder="City"
                             {...field}
                           />
@@ -290,7 +290,7 @@ function UserForm() {
                             defaultValue={field.value}
                           >
                             <FormControl>
-                              <SelectTrigger className="cursor-pointer w-full h-17 border-2 rounded-none border-gray-300 shadow-xl">
+                              <SelectTrigger className="cursor-pointer w-full h-17 border-2 rounded-none border-[var(--ring)] shadow-xl">
                                 <SelectValue placeholder="Select a Role" />
                               </SelectTrigger>
                             </FormControl>
@@ -329,7 +329,7 @@ function UserForm() {
                 <Button
                   variant="default"
                   type="submit"
-                  className="h-[2.9375rem] w-[17.5rem] text-xl font-mediump-6 p-7 cursor-pointer rounded-none bg-black hover:bg-white hover:text-black hover:border-4"
+                  className="h-[2.9375rem] w-[17.5rem] text-xl font-mediump-6 p-7 cursor-pointer rounded-none bg-[var(--primary)] hover:bg-[var(--ring)] hover:text-[var(--primary)] hover:border-4"
                 >
                   Create New User
                 </Button>
