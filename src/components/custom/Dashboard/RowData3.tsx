@@ -59,7 +59,7 @@ function RowData3() {
     <div>
       <div className="mt-4 flex items-center justify-between gap-4 flex-wrap">
         <div>
-          <Card className="bg-gray-200 hover:bg-gray-300 duration-150">
+          <Card className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
             <CardHeader>
               <CardTitle className="text-xl">
                 Bar Chart - Stacked + Legend
@@ -114,7 +114,7 @@ function RowData3() {
           </Card>
         </div>
         <div className="h-[48.5rem]">
-          <Card className="flex flex-col h-full bg-gray-200 hover:bg-gray-300 duration-150">
+          <Card className="flex flex-col h-full bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
             <CardHeader className="items-center pb-0">
               <CardTitle>Pie Chart - Donut with Text</CardTitle>
               <CardDescription>January - June 2024</CardDescription>
