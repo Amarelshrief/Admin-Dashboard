@@ -1,6 +1,3 @@
-"use client";
-
-import * as React from "react";
 import {
   BookUser,
   UsersRound,
@@ -100,16 +97,16 @@ export default function SidebarPage({
       <Sidebar collapsible="icon" {...props}>
         {/* <SidebarHeader> */}
         <NavUser user={data.user} />
-        <SidebarContent className="bg-black">
-          <SidebarGroup className="text-white">
-            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
+        <SidebarContent className="bg-[var(--input)]">
+          <SidebarGroup className="">
+            <SidebarGroupLabel className="font-bold">
               About Users
             </SidebarGroupLabel>
             <NavMain items={data.about_user} />
           </SidebarGroup>
           <span className="border-[.5px] border-gray-600"></span>
           <SidebarGroup>
-            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
+            <SidebarGroupLabel className="font-bold">
               Services
             </SidebarGroupLabel>
             <NavMain items={data.services} />
@@ -117,9 +114,7 @@ export default function SidebarPage({
           <span className="border-[.5px] border-gray-600"></span>
 
           <SidebarGroup>
-            <SidebarGroupLabel className="text-white font-bold bg-gray-600">
-              Charts
-            </SidebarGroupLabel>
+            <SidebarGroupLabel className="font-bold">Charts</SidebarGroupLabel>
             <NavMain items={data.chart} />
           </SidebarGroup>
           {/* <NavProjects projects={data.projects} /> */}
