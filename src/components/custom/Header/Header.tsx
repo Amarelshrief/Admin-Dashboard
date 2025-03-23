@@ -1,8 +1,23 @@
 import { Input } from "@/components/ui/input";
-import { Moon, Bell, Settings, UserRound } from "lucide-react";
+import { Moon, Bell, Settings, UserRound, Sun } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "@/components/custom/Theme/Theme";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function Header() {
+  const [dark, setDark] = useState<boolean>();
+  const { setTheme } = useTheme();
+
+  function toggleDark() {
+    setDark(!dark);
+  }
+
+  console.log(dark);
+
   return (
     <div className="flex items-center justify-between">
       <div className="">
@@ -14,22 +29,36 @@ function Header() {
       </div>
       <div className="">
         <ul className="flex items-center gap-8">
-          <li className="hover:bg-black hover:text-white h-10 w-10 flex items-center justify-center rounded-full duration-150">
-            <Link to="/">
-              <Moon className="" />
-            </Link>
+          <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
+            <DropdownMenu>
+              <DropdownMenuTrigger onClick={toggleDark}>
+                {!dark && <Moon onClick={() => setTheme("dark")} />}
+                {dark && <Sun onClick={() => setTheme("light")} />}
+              </DropdownMenuTrigger>
+              {/* <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme("light")}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          Dark
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("system")}>
+          System
+        </DropdownMenuItem>
+      </DropdownMenuContent> */}
+            </DropdownMenu>
           </li>
-          <li className="hover:bg-black hover:text-white h-10 w-10 flex items-center justify-center rounded-full duration-150">
+          <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
             <Link to="/">
               <Bell />
             </Link>
           </li>
-          <li className="hover:bg-black hover:text-white h-10 w-10 flex items-center justify-center rounded-full duration-150">
+          <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
             <Link to="/">
               <Settings />
             </Link>
           </li>
-          <li className="hover:bg-black hover:text-white h-10 w-10 flex items-center justify-center rounded-full duration-150">
+          <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
             <Link to="/">
               <UserRound />
             </Link>
