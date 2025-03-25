@@ -14,7 +14,7 @@ export default function DashboardRootLayout() {
             <SidebarProvider>
               <div className="flex items-start">
                 <SidebarPage />
-                <SidebarTrigger className="-mr-4 cursor-pointer flex justify-center items-center h-8 w-8" />
+                <SidebarTrigger className="-mr-4 cursor-pointer flex justify-center items-center h-8 w-8 hover:bg-[var(--ring)]" />
               </div>
               <Separator orientation="vertical" className="mr-2 h-4" />
             </SidebarProvider>
