@@ -3,7 +3,6 @@ import {
   UsersRound,
   House,
   User,
-  Calendar,
   BadgeHelp,
   ChartNoAxesColumn,
   ChartPie,
@@ -55,12 +54,6 @@ const data = {
       isActive: false,
     },
     {
-      title: "Calender",
-      url: "/calender",
-      icon: Calendar,
-      isActive: false,
-    },
-    {
       title: "FAQ Page",
       url: "/faq-help",
       icon: BadgeHelp,
@@ -93,7 +86,7 @@ export default function SidebarPage({
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <>
+    <nav>
       <Sidebar collapsible="icon" {...props}>
         {/* <SidebarHeader> */}
         <NavUser user={data.user} />
@@ -123,6 +116,6 @@ export default function SidebarPage({
 
         <SidebarRail />
       </Sidebar>
-    </>
+    </nav>
   );
 }
