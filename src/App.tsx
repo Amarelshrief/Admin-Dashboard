@@ -6,7 +6,6 @@ import LineChartPage from "./pages/LineChart";
 import PieChartPage from "./pages/PieChart";
 import BarChartPage from "./pages/BarChart";
 import FAQHelpPage from "./pages/FAQHelp";
-import CalenderPage from "./pages/Calender";
 import ProfileFormPage from "./pages/ProfileForm";
 import DashboardRootLayout from "./pages/DashboardRoot";
 
@@ -19,7 +18,6 @@ const router = createBrowserRouter([
       { path: "/manage-team", element: <ManageTeamPage /> },
       { path: "/contacts-info", element: <ContactsInfoPage /> },
       { path: "/profile-form", element: <ProfileFormPage /> },
-      { path: "/calender", element: <CalenderPage /> },
       { path: "/faq-help", element: <FAQHelpPage /> },
       { path: "/bar-chart", element: <BarChartPage /> },
       { path: "/pie-chart", element: <PieChartPage /> },
