@@ -9,14 +9,20 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 function Header() {
-  const [dark, setDark] = useState<boolean>();
+  const [dark, setDark] = useState(
+    localStorage.getItem("vite-ui-theme") === "dark"
+  );
   const { setTheme } = useTheme();
+
+  console.log(dark);
 
   function toggleDark() {
     setDark(!dark);
   }
 
   console.log(dark);
+
+  // console.log(root.classList.contains("dark"));
 
   return (
     <div className="flex items-center justify-between">
@@ -31,21 +37,13 @@ function Header() {
         <ul className="flex items-center gap-8">
           <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
             <DropdownMenu>
-              <DropdownMenuTrigger onClick={toggleDark}>
-                {!dark && <Moon onClick={() => setTheme("dark")} />}
+              <DropdownMenuTrigger
+                className="cursor-pointer"
+                onClick={toggleDark}
+              >
                 {dark && <Sun onClick={() => setTheme("light")} />}
+                {!dark && <Moon onClick={() => setTheme("dark")} />}
               </DropdownMenuTrigger>
-              {/* <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent> */}
             </DropdownMenu>
           </li>
           <li className="cursor-pointer hover:bg-[var(--ring)] h-10 w-10 flex items-center justify-center rounded-full duration-150">
