@@ -17,7 +17,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Link } from "react-router-dom";
 
 const formSchema = z.object({
   first_name: z.string().min(2, {
@@ -294,7 +293,7 @@ function UserForm() {
                                 <SelectValue placeholder="Select a Role" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent className="bg-[var(--input)]">
                               <SelectItem
                                 className="cursor-pointer"
                                 value="admin"
@@ -302,13 +301,13 @@ function UserForm() {
                                 Admin
                               </SelectItem>
                               <SelectItem
-                                className="cursor-pointer"
+                                className="cursor-pointer bg-[var(--input)]"
                                 value="user"
                               >
                                 User
                               </SelectItem>
                               <SelectItem
-                                className="cursor-pointer"
+                                className="cursor-pointer bg-[var(--input)]"
                                 value="manager"
                               >
                                 Manager

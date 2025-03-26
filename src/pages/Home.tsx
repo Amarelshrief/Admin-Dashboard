@@ -2,9 +2,9 @@ import Dashboard from "@/components/custom/Dashboard/Dashboard";
 
 function HomePage() {
   return (
-    <div>
+    <section>
       <Dashboard />
-    </div>
+    </section>
   );
 }
 
