@@ -25,13 +25,9 @@ function Header() {
   // console.log(root.classList.contains("dark"));
 
   return (
-    <div className="flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <div className="">
-        <Input
-          type="search"
-          placeholder="Search..."
-          className="w-[12rem] ml-4"
-        />
+        <Input type="search" placeholder="Search..." className="w-[12rem]" />
       </div>
       <div className="">
         <ul className="flex items-center gap-8">
@@ -63,7 +59,7 @@ function Header() {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
 
