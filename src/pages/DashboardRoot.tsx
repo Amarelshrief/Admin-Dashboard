@@ -9,7 +9,7 @@ export default function DashboardRootLayout() {
   return (
     <section className="">
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="flex justify-between items-start h-[4rem] w-full pt-2 shadow-xl">
+        <div className="flex justify-between items-start h-[3rem] w-full shadow-xl">
           <div>
             <SidebarProvider>
               <div className="flex items-start">
@@ -21,7 +21,7 @@ export default function DashboardRootLayout() {
           </div>
           <div className="w-full flex flex-col">
             <Header />
-            <main className="mt-6">
+            <main className="pt-8 pr-1">
               <Outlet />
             </main>
           </div>
