@@ -102,7 +102,7 @@ const Teams = [
 
 function ContactsData() {
   return (
-    <main className="h-screen">
+    <section className="">
       <div>
         <h1 className="text-3xl font-bold">Contacts</h1>
       </div>
@@ -139,7 +139,7 @@ function ContactsData() {
           </TableBody>
         </Table>
       </div>
-    </main>
+    </section>
   );
 }
 
