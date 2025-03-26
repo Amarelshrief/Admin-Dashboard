@@ -30,7 +30,7 @@ function Dashboard() {
       <div className="flex gap-11 flex-wrap">
         <RowData2 />
       </div>
-      <div className="flex gap-11 flex-wrap mb-4">
+      <div className="flex gap-11 flex-wrap">
         <RowData3 />
       </div>
     </section>
