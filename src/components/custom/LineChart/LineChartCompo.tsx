@@ -44,7 +44,7 @@ const chartConfig = {
 
 export default function PieChartCompo() {
   return (
-    <section>
+    <section className="mb-4">
       <div>
         <h1 className="text-3xl font-bold">Line Chart</h1>
       </div>
@@ -52,13 +52,13 @@ export default function PieChartCompo() {
         <p>The minimum wage in Germany,Frane and Spain (EUR/month)</p>
       </div>
       <div className="mt-4">
-        <Card>
+        <Card className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
           <CardHeader>
             <CardTitle>Line Chart - Label</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
           </CardHeader>
           <CardContent>
-            <ChartContainer className="h-[40rem] w-full" config={chartConfig}>
+            <ChartContainer className="h-[35rem] w-full" config={chartConfig}>
               <LineChart
                 accessibilityLayer
                 data={chartData}
