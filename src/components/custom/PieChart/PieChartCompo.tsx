@@ -56,7 +56,7 @@ export default function PieChartCompo() {
   }, []);
 
   return (
-    <section>
+    <section className="mb-4">
       <div>
         <h1 className="text-3xl font-bold">Pie Chart</h1>
       </div>
@@ -64,7 +64,7 @@ export default function PieChartCompo() {
         <p>Simple Pie Chart</p>
       </div>
       <div className="mt-4">
-        <Card className="flex flex-col h-[40rem]">
+        <Card className="flex flex-col h-[45rem] bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
           <CardHeader className="items-center pb-0">
             <CardTitle>Pie Chart - Donut with Text</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
