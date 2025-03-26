@@ -7,7 +7,7 @@ import {
 
 function HelpCompo() {
   return (
-    <main className="">
+    <section className="">
       <div>
         <h1 className="text-3xl font-bold">FAQ Help</h1>
       </div>
@@ -120,7 +120,7 @@ function HelpCompo() {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="text-2xl mb-64">
+        <div className="text-2xl mb-4">
           <Accordion type="single" collapsible>
             <AccordionItem
               className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
@@ -136,7 +136,7 @@ function HelpCompo() {
           </Accordion>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 
