@@ -56,7 +56,7 @@ function RowData3() {
     return data_5.reduce((acc, curr) => acc + curr.visitors, 0);
   }, []);
   return (
-    <div>
+    <section>
       <div className="mt-4 flex items-center justify-between gap-4 flex-wrap">
         <div>
           <Card className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
@@ -181,7 +181,7 @@ function RowData3() {
           </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

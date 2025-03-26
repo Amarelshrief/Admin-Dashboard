@@ -41,7 +41,7 @@ const chartConfig = {
 
 function RowData2() {
   return (
-    <div>
+    <section>
       <div className="flex justify-between items-center mt-4 gap-4 flex-wrap">
         <div>
           <Card className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
@@ -137,7 +137,7 @@ function RowData2() {
             </CardContent>
           </Card>
         </div>
-        <div className="bg-[var(--secondary)] hover:bg-[var(--ring)] duration-150 h-[35.5rem] w-[44rem] rounded-md p-4 overflow-y-scroll">
+        <div className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150 h-[35.5rem] w-[44rem] rounded-md p-4 overflow-y-scroll">
           <div className="mb-4 font-bold text-xl">
             <h2>Recent Transactions</h2>
           </div>
@@ -145,7 +145,7 @@ function RowData2() {
             {Transactions.map((item, index) => (
               <ul
                 key={index}
-                className="flex items-center justify-between text-center bg-[var(--input)] rounded-sm p-4"
+                className="flex items-center justify-between text-center bg-[var(--secondary)] rounded-sm p-4"
               >
                 <div className="flex flex-col gap-2 p-2">
                   <li className="font-bold text-xl">{item.user}</li>
@@ -158,7 +158,7 @@ function RowData2() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
