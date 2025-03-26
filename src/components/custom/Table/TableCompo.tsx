@@ -86,7 +86,7 @@ const Teams = [
 
 function TableCompo() {
   return (
-    <main>
+    <section>
       <div>
         <h1 className="text-3xl font-bold">Teams</h1>
       </div>
@@ -123,7 +123,7 @@ function TableCompo() {
           </TableBody>
         </Table>
       </div>
-    </main>
+    </section>
   );
 }
 
