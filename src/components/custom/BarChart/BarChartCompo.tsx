@@ -1,6 +1,12 @@
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -35,7 +41,7 @@ const chartConfig = {
 
 export default function BarChartCompo() {
   return (
-    <section>
+    <section className="mb-4">
       <div>
         <h1 className="text-3xl font-bold">Bar Chart</h1>
       </div>
@@ -43,13 +49,13 @@ export default function BarChartCompo() {
         <p>The minimum wage in Germany,Frane and Spain (EUR/month)</p>
       </div>
       <div className="mt-4">
-        <Card className="">
-          {/* <CardHeader>
+        <Card className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
+          <CardHeader>
             <CardTitle>Bar Chart - Stacked + Legend</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
-          </CardHeader> */}
+          </CardHeader>
           <CardContent className="">
-            <ChartContainer className="h-[40rem] w-full" config={chartConfig}>
+            <ChartContainer className="h-[38rem] w-full" config={chartConfig}>
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
                 <XAxis
