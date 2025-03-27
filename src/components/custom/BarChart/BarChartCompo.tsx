@@ -56,7 +56,7 @@ export default function BarChartCompo() {
           </CardHeader>
           <CardContent className="">
             <ChartContainer
-              className="h-[30rem] w-[21.5rem] lg:h-[38rem] lg:w-full"
+              className="h-[30rem] w-[21.5rem] lg:h-[38rem] lg:w-[100%]"
               config={chartConfig}
             >
               <BarChart accessibilityLayer data={chartData}>
