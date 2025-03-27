@@ -53,7 +53,7 @@ function RowData2() {
             </CardHeader>
             <CardContent>
               <ChartContainer
-                className="lg:h-[27rem] lg:w-full w-[21rem] h-[15rem]"
+                className="lg:h-[27rem] lg:w-full w-[18rem] h-[15rem]"
                 config={chartConfig}
               >
                 <LineChart
@@ -140,7 +140,7 @@ function RowData2() {
             </CardContent>
           </Card>
         </div>
-        <div className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150 lg:h-[35.5rem] lg:w-[44rem] h-[25rem] w-[25rem] rounded-md p-4 overflow-y-scroll">
+        <div className="bg-[var(--input)] hover:bg-[var(--ring)] duration-150 lg:h-[35.5rem] lg:w-[44rem] md:h-[23.5rem] md:w-[20rem] h-[28rem] rounded-md p-4 overflow-y-scroll">
           <div className="mb-4 font-bold text-xl">
             <h2>Recent Transactions</h2>
           </div>
