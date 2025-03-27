@@ -70,7 +70,7 @@ function RowData3() {
             </CardHeader>
             <CardContent className="">
               <ChartContainer
-                className="lg:h-[40rem] lg:w-full w-[21rem] h-[18rem]"
+                className="lg:h-[40rem] lg:w-full w-[18rem] md:w-[21rem] h-[18rem]"
                 config={chartConfig}
               >
                 <BarChart accessibilityLayer data={chartData}>
