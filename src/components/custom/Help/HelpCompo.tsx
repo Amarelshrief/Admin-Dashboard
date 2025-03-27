@@ -120,7 +120,7 @@ function HelpCompo() {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="text-2xl mb-4">
+        <div className="text-2xl mb-24 lg:mb-6">
           <Accordion type="single" collapsible>
             <AccordionItem
               className="bg-[var(--input)] hover:bg-[var(--ring)] duration-200 rounded-sm text-[var(--primary)] border-[var(--ring)]"
