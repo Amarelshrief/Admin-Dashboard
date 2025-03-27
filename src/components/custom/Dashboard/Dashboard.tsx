@@ -14,14 +14,16 @@ import RowData3 from "./RowData3";
 
 function Dashboard() {
   return (
-    <section>
-      <div>
-        <h1 className="text-3xl font-bold">Dashboard</h1>
+    <section className="mb-4">
+      <div className="">
+        <div>
+          <h1 className="text-3xl font-bold">Dashboard</h1>
+        </div>
+        <div className="mt-4 text-gray-500">
+          <p>Welcome to your dashboard</p>
+        </div>
       </div>
-      <div className="mt-4 text-gray-500">
-        <p>Welcome to your dashboard</p>
-      </div>
-      <div className="flex gap-11 flex-wrap">
+      <div className="flex xl:gap-11 gap-2 flex-wrap">
         <RowData data={data_1} config={config_1} />
         <RowData data={data_2} config={config_2} />
         <RowData data={data_3} config={config_3} />
