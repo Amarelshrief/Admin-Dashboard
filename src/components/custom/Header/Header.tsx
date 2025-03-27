@@ -14,15 +14,9 @@ function Header() {
   );
   const { setTheme } = useTheme();
 
-  console.log(dark);
-
   function toggleDark() {
     setDark(!dark);
   }
-
-  console.log(dark);
-
-  // console.log(root.classList.contains("dark"));
 
   return (
     <header className="flex items-center justify-center lg:justify-between">
