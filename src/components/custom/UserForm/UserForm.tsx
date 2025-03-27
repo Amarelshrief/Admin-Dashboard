@@ -323,7 +323,7 @@ function UserForm() {
               </div>
               <div></div>
 
-              <div className="mt-4 w-full flex justify-end h-8">
+              <div className="mt-4 w-full flex justify-center md:justify-end h-8">
                 {/* <Link to="/"> */}
                 <Button
                   variant="default"
