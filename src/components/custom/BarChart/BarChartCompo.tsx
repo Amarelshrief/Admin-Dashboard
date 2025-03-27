@@ -55,7 +55,10 @@ export default function BarChartCompo() {
             <CardDescription>January - June 2024</CardDescription>
           </CardHeader>
           <CardContent className="">
-            <ChartContainer className="h-[38rem] w-full" config={chartConfig}>
+            <ChartContainer
+              className="h-[30rem] w-[21.5rem] lg:h-[38rem] lg:w-full"
+              config={chartConfig}
+            >
               <BarChart accessibilityLayer data={chartData}>
                 <CartesianGrid vertical={false} />
                 <XAxis
