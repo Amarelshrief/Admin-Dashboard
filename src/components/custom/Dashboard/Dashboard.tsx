@@ -14,7 +14,7 @@ import RowData3 from "./RowData3";
 
 function Dashboard() {
   return (
-    <section className="mb-4">
+    <section className="mb-20 lg:mb-4">
       <div className="">
         <div>
           <h1 className="text-3xl font-bold">Dashboard</h1>
