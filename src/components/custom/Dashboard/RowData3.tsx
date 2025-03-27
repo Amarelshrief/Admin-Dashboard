@@ -69,7 +69,10 @@ function RowData3() {
               </CardDescription>
             </CardHeader>
             <CardContent className="">
-              <ChartContainer className="h-[40rem] w-full" config={chartConfig}>
+              <ChartContainer
+                className="lg:h-[40rem] lg:w-full w-[21rem] h-[18rem]"
+                config={chartConfig}
+              >
                 <BarChart accessibilityLayer data={chartData}>
                   <CartesianGrid vertical={false} />
                   <XAxis
@@ -113,7 +116,7 @@ function RowData3() {
           </CardFooter> */}
           </Card>
         </div>
-        <div className="h-[48.5rem]">
+        <div className="lg:h-[48.5rem]">
           <Card className="flex flex-col h-full bg-[var(--input)] hover:bg-[var(--ring)] duration-150">
             <CardHeader className="items-center pb-0">
               <CardTitle>Pie Chart - Donut with Text</CardTitle>
