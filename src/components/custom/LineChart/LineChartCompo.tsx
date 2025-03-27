@@ -58,7 +58,10 @@ export default function PieChartCompo() {
             <CardDescription>January - June 2024</CardDescription>
           </CardHeader>
           <CardContent>
-            <ChartContainer className="h-[35rem] w-full" config={chartConfig}>
+            <ChartContainer
+              className="w-[21rem] h-[30rem] lg:h-[33rem] lg:w-full"
+              config={chartConfig}
+            >
               <LineChart
                 accessibilityLayer
                 data={chartData}
