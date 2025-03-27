@@ -1,5 +1,3 @@
-"use client";
-
 import {
   BadgeCheck,
   Bell,
@@ -25,6 +23,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
+import logoImg from "@/assets/superhero-logos-2.webp";
 
 export function NavUser({
   user,
@@ -48,7 +47,7 @@ export function NavUser({
             >
               <Avatar className="h-8 w-8 rounded-lg flex items-center justify-center">
                 <AvatarImage
-                  src="/src/assets/superhero-logos-2.webp"
+                  src={logoImg ? logoImg : user.avatar}
                   alt={user.name}
                 />
               </Avatar>
