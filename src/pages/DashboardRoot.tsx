@@ -21,7 +21,7 @@ export default function DashboardRootLayout() {
           </div>
           <div className="w-full flex flex-col">
             <Header />
-            <main className="pt-8 pr-1">
+            <main className="lg:pt-4 pr-1 mt-12 lg:mt-0">
               <Outlet />
             </main>
           </div>
